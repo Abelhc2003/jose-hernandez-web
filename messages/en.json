@@ -1,0 +1,89 @@
+{
+  "_todo": "TODO: traducir todos los textos al inglés. Por ahora se usa el texto en español como placeholder.",
+  "metadata": {
+    "title": "José Hernández Mondéjar — Escritor",
+    "titleTemplate": "%s | José Hernández Mondéjar",
+    "description": "Escritor murciano. Autor de la trilogía La no muerte de Jesús, poesía y narrativa. Compra sus libros en Amazon.",
+    "author": "José Hernández Mondéjar"
+  },
+  "nav": {
+    "home": "Inicio",
+    "author": "El Autor",
+    "works": "Obras",
+    "trilogy": "La Trilogía",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "ornament": "Escritor & Articulista",
+    "name": "José Hernández Mondéjar",
+    "tagline": "Voz crítica del ciudadano de a pie. Poesía, prosa y narrativa desde Murcia.",
+    "cta": "Descubrir sus obras",
+    "secondaryCta": "Conocer al autor"
+  },
+  "home": {
+    "intro": {
+      "tag": "El autor",
+      "title": "Una voz con más de veinte años en prensa",
+      "body": "Murciano, nacido en 1953. Director del Hospital Perpetuo Socorro de Cartagena desde 1992. Articulista en La Verdad y La Opinión durante más de dos décadas. Su obra recorre la crítica social, la poesía y la narrativa histórica.",
+      "cta": "Conocer al autor"
+    },
+    "featured": {
+      "tag": "Obras destacadas",
+      "title": "Un libro para cada pregunta",
+      "body": "De la trilogía histórica a la poesía más íntima, cada obra invita al lector a mirar el mundo con otros ojos.",
+      "cta": "Ver todas las obras"
+    },
+    "trilogy": {
+      "tag": "La Trilogía",
+      "title": "La no muerte de Jesús",
+      "body": "Una verdad que lo cambia todo. Tres libros que reescriben la historia conocida de Jesús, los apóstoles y Pablo.",
+      "cta": "Descubrir la trilogía"
+    },
+    "quote": {
+      "text": "Escribo para que el lector común encuentre, en cada página, una parte del mundo que creía perdida.",
+      "author": "José Hernández Mondéjar"
+    }
+  },
+  "books": {
+    "buyOnAmazon": "Comprar en Amazon",
+    "learnMore": "Leer más",
+    "categories": {
+      "trilogia": "Trilogía",
+      "poesia": "Poesía",
+      "narrativa": "Narrativa"
+    },
+    "trilogyShort": "Trilogía · Libro"
+  },
+  "newsletter": {
+    "tag": "Newsletter",
+    "title": "Recibe en tu correo cada nueva obra",
+    "body": "Sin spam. Solo novedades literarias. Cancela cuando quieras.",
+    "placeholder": "Tu email",
+    "cta": "Suscribirme",
+    "legal": "Acepto recibir comunicaciones y la política de privacidad.",
+    "success": "¡Gracias por suscribirte!",
+    "error": "No se pudo completar la suscripción. Inténtalo de nuevo."
+  },
+  "contact": {
+    "title": "Contacto",
+    "subjects": {
+      "presentation": "Presentación",
+      "interview": "Entrevista",
+      "work": "Consulta sobre obra",
+      "other": "Otro"
+    },
+    "form": {
+      "name": "Nombre",
+      "email": "Email",
+      "subject": "Asunto",
+      "message": "Mensaje",
+      "send": "Enviar"
+    }
+  },
+  "footer": {
+    "tagline": "Escritor. Articulista. Murcia.",
+    "privacy": "Política de privacidad",
+    "legal": "Aviso legal",
+    "rights": "© {year} José Hernández Mondéjar. Todos los derechos reservados."
+  }
+}
