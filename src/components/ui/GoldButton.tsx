@@ -81,9 +81,15 @@ export function GoldButton(props: Props) {
     );
   }
 
-  const { children, variant: _v, className: _c, ...rest } = props;
+  const { children, type, disabled, onClick, ...rest } = props;
   return (
-    <button className={classes} {...rest}>
+    <button
+      type={type ?? "button"}
+      disabled={disabled}
+      onClick={onClick}
+      aria-label={rest["aria-label"]}
+      className={classes}
+    >
       <ButtonContent>{children}</ButtonContent>
     </button>
   );
