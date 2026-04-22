@@ -93,6 +93,129 @@
     "notFoundBody": "La obra que buscas no existe o ha sido retirada del catálogo.",
     "price": "Desde"
   },
+  "author": {
+    "tag": "El autor",
+    "title": "José Hernández Mondéjar",
+    "kicker": "Escritor, articulista y voz crítica desde Murcia.",
+    "quote": "Escribir es devolver al lector aquello que la vida le había arrebatado sin aviso.",
+    "intro": {
+      "tag": "Biografía",
+      "title": "Una vida entre la gestión y la palabra",
+      "body": [
+        "Nació en Murcia el 3 de noviembre de 1953. Desde muy joven compaginó el estudio con el descubrimiento de la escritura: sus primeras letras vieron la luz en el Diario Línea y durante el servicio militar, donde fue reconocido con varios premios literarios.",
+        "Graduado Social, Licenciado en Ciencias del Trabajo y Máster en Dirección de Empresas, desarrolló una doble vocación: la gestión sanitaria y las letras. Desde 1992 dirige el Hospital Perpetuo Socorro de Cartagena, puesto que combina con una trayectoria de más de veinte años como articulista de opinión en La Verdad y La Opinión de Murcia.",
+        "Su obra, que recorre la poesía, la narrativa y la revisión histórico-religiosa, se caracteriza por una mirada crítica hacia el mundo contemporáneo y una profunda sensibilidad por el ciudadano de a pie. Autor de la trilogía La no muerte de Jesús, sigue escribiendo desde la convicción de que la literatura es una forma de resistencia y de memoria."
+      ]
+    },
+    "timeline": {
+      "tag": "Trayectoria",
+      "title": "Una línea escrita con tiempo",
+      "entries": [
+        {
+          "year": "1953",
+          "title": "Nacimiento en Murcia",
+          "body": "3 de noviembre. Comienza una vida ligada a la tierra murciana."
+        },
+        {
+          "year": "Juventud",
+          "title": "Primeras letras",
+          "body": "Publica en el Diario Línea y durante el servicio militar. Recibe varios premios literarios."
+        },
+        {
+          "year": "Formación",
+          "title": "Graduado Social · Ciencias del Trabajo · Máster MBA",
+          "body": "Triple formación que le abre las puertas de la gestión sanitaria y el análisis social."
+        },
+        {
+          "year": "1992",
+          "title": "Director del Hospital Perpetuo Socorro",
+          "body": "Asume la dirección del hospital en Cartagena, cargo que mantiene hasta la actualidad."
+        },
+        {
+          "year": "+20 años",
+          "title": "Articulista en La Verdad y La Opinión",
+          "body": "Voz de opinión sostenida durante más de dos décadas en la prensa regional murciana."
+        },
+        {
+          "year": "Hoy",
+          "title": "Poeta, narrador y autor de la trilogía",
+          "body": "Publica poesía, narrativa y la trilogía histórica La no muerte de Jesús."
+        }
+      ]
+    },
+    "career": {
+      "tag": "Profesión y prensa",
+      "title": "Gestor sanitario · Articulista",
+      "body": "Durante más de tres décadas ha combinado la dirección del Hospital Perpetuo Socorro de Cartagena con una presencia constante en los medios escritos de la Región de Murcia. Una trayectoria en la que la mirada del gestor y la del articulista se alimentan mutuamente."
+    },
+    "worksTag": "Sus obras",
+    "worksTitle": "Seis libros, tres géneros",
+    "worksBody": "Trilogía histórico-religiosa, poesía y narrativa. Descubre todas las obras publicadas.",
+    "worksCta": "Ver catálogo completo"
+  },
+  "trilogyPage": {
+    "intro": {
+      "kicker": "La Trilogía",
+      "title": "Una verdad que lo cambia todo",
+      "body": "Tres libros. Una lectura heterodoxa de los Evangelios. Una invitación a mirar la historia con otros ojos."
+    },
+    "acts": {
+      "1": {
+        "roman": "I",
+        "kicker": "Libro I · El evangelio invisible",
+        "title": "¿Y si Jesús no murió en la cruz?",
+        "body": "El primer libro de la trilogía plantea una pregunta incómoda y abre una investigación que desmonta certezas asumidas durante siglos. La crucifixión, la resurrección y lo que la tradición ha preferido no contar."
+      },
+      "2": {
+        "roman": "II",
+        "kicker": "Libro II · Hechos de los Apóstoles",
+        "title": "Los apóstoles sabían la verdad",
+        "body": "El segundo volumen sigue la pista a los primeros discípulos. Comunidades perseguidas, silencios convenidos y una verdad que circulaba en voz baja por los caminos del Imperio."
+      },
+      "3": {
+        "roman": "III",
+        "kicker": "Libro III · Cartas de Pablo",
+        "title": "Las cartas que nadie debía leer",
+        "body": "El cierre de la trilogía entra en las cartas paulinas con una mirada crítica: qué se escribió, qué se reescribió y cómo una doctrina se fue volviendo Iglesia."
+      }
+    },
+    "transitions": {
+      "1": "Pero la historia no terminó ahí…",
+      "2": "Y Pablo… Pablo lo cambió todo."
+    },
+    "closing": {
+      "kicker": "La trilogía completa",
+      "title": "Tu visión del mundo, transformada",
+      "body": "Tres libros pensados para leerse juntos. Una experiencia de lectura que reescribe lo que creías saber.",
+      "cta": "Comprar la trilogía"
+    }
+  },
+  "contactPage": {
+    "kicker": "Escribir al autor",
+    "title": "Contacto",
+    "body": "Presentaciones, entrevistas, consultas sobre la obra o cualquier otra cuestión. Déjame un mensaje y te responderé personalmente.",
+    "info": {
+      "location": "Murcia, España",
+      "response": "Respuesta habitual en 2–5 días laborables."
+    },
+    "success": "Mensaje enviado. Gracias por escribir.",
+    "errors": {
+      "generic": "No se pudo enviar el mensaje. Inténtalo de nuevo en unos minutos.",
+      "rate": "Demasiados intentos. Vuelve a intentarlo más tarde.",
+      "invalid": "Revisa los campos y vuelve a intentarlo.",
+      "required": "Campo obligatorio",
+      "email": "Email no válido",
+      "short": "Demasiado corto",
+      "consent": "Debes aceptar la política de privacidad"
+    },
+    "consent": "Acepto la política de privacidad y el tratamiento de mis datos para responder a esta consulta."
+  },
+  "newsletterPage": {
+    "kicker": "Newsletter",
+    "title": "Estás dentro",
+    "body": "Gracias por suscribirte. Recibirás las próximas novedades literarias directamente en tu correo.",
+    "cta": "Volver al inicio"
+  },
   "newsletter": {
     "tag": "Newsletter",
     "title": "Recibe en tu correo cada nueva obra",
