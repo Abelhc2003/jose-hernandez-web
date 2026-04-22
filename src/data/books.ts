@@ -104,3 +104,22 @@ export function getFeaturedBooks(): Book[] {
     (book): book is Book => Boolean(book),
   );
 }
+
+export function getRelatedBooks(slug: string, limit = 3): Book[] {
+  const current = getBookBySlug(slug);
+  if (!current) return [];
+
+  const remaining = books.filter((book) => book.slug !== slug);
+
+  if (current.category === "trilogia") {
+    const otherTrilogy = remaining.filter((b) => b.category === "trilogia");
+    const others = remaining.filter((b) => b.category !== "trilogia");
+    return [...otherTrilogy, ...others].slice(0, limit);
+  }
+
+  const sameCategory = remaining.filter((b) => b.category === current.category);
+  const differentCategory = remaining.filter(
+    (b) => b.category !== current.category,
+  );
+  return [...sameCategory, ...differentCategory].slice(0, limit);
+}

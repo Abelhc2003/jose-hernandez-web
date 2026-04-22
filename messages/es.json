@@ -53,6 +53,46 @@
     },
     "trilogyShort": "Trilogía · Libro"
   },
+  "works": {
+    "tag": "Catálogo",
+    "title": "La obra completa",
+    "body": "Seis libros que recorren la trilogía histórica, la poesía íntima y la narrativa breve. Cada obra es una puerta a una forma distinta de mirar el mundo.",
+    "sections": {
+      "trilogia": {
+        "title": "La no muerte de Jesús",
+        "subtitle": "Trilogía histórico-religiosa",
+        "body": "Tres libros que reescriben la historia conocida de Jesús, los apóstoles y Pablo. Una verdad que lo cambia todo."
+      },
+      "poesia": {
+        "title": "Poesía",
+        "subtitle": "Entre versos y prosa",
+        "body": "El lenguaje más íntimo del autor. Emoción, tiempo y memoria en forma de verso."
+      },
+      "narrativa": {
+        "title": "Narrativa",
+        "subtitle": "Relatos y viajes",
+        "body": "Historias que transitan entre lo cotidiano y lo esencial."
+      }
+    }
+  },
+  "bookPage": {
+    "synopsisTag": "Sinopsis",
+    "synopsisFallback": "Sinopsis próximamente. Mientras tanto, puedes conocer más sobre esta obra en Amazon.",
+    "aboutTag": "Sobre esta obra",
+    "aboutBody": "Una obra de José Hernández Mondéjar, escritor murciano con más de veinte años de trayectoria en prensa y autor de poesía, narrativa y del ciclo histórico de la trilogía \"La no muerte de Jesús\".",
+    "authorTag": "El autor",
+    "authorBody": "Murciano, nacido en 1953. Director del Hospital Perpetuo Socorro de Cartagena desde 1992 y articulista en La Verdad y La Opinión durante más de dos décadas.",
+    "authorCta": "Conocer al autor",
+    "trilogyNavTag": "Trilogía",
+    "relatedTag": "También te puede interesar",
+    "ctaFinalTag": "Llévatelo a casa",
+    "ctaFinalTitle": "¿Listo para leerlo?",
+    "ctaFinalBody": "Disponible en Amazon. Edición en papel y Kindle según disponibilidad.",
+    "backToWorks": "Volver al catálogo",
+    "notFoundTitle": "Obra no encontrada",
+    "notFoundBody": "La obra que buscas no existe o ha sido retirada del catálogo.",
+    "price": "Desde"
+  },
   "newsletter": {
     "tag": "Newsletter",
     "title": "Recibe en tu correo cada nueva obra",
