@@ -1,13 +1,16 @@
 "use client";
 
 import { useState } from "react";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
+import { useRouter } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
 
 type FormState = "idle" | "loading" | "success" | "error";
 
 export function NewsletterForm() {
   const t = useTranslations("newsletter");
+  const locale = useLocale();
+  const router = useRouter();
   const [email, setEmail] = useState("");
   const [accepted, setAccepted] = useState(false);
   const [state, setState] = useState<FormState>("idle");
@@ -17,10 +20,19 @@ export function NewsletterForm() {
     if (!email || !accepted) return;
     setState("loading");
     try {
-      // TODO (Fase 2): POST /api/newsletter con { email, locale }
-      await new Promise((r) => setTimeout(r, 400));
+      const res = await fetch("/api/newsletter", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, consent: accepted, locale }),
+      });
+      if (!res.ok) {
+        setState("error");
+        return;
+      }
       setState("success");
       setEmail("");
+      setAccepted(false);
+      router.push("/newsletter");
     } catch {
       setState("error");
     }
