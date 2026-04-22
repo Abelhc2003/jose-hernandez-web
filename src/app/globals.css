@@ -2,26 +2,74 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@layer base {
+  html {
+    font-feature-settings: "ss01", "ss02", "liga", "kern";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  body {
+    @apply bg-dark font-sans text-cream;
+    font-weight: 300;
+    line-height: 1.7;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-serif text-cream;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+  }
+
+  a {
+    @apply transition-colors duration-300;
+  }
+
+  ::selection {
+    @apply bg-gold/40 text-cream;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  .drop-cap::first-letter {
+    @apply font-serif text-gold;
+    font-size: 4.5rem;
+    line-height: 1;
+    float: left;
+    margin: 0.15rem 0.75rem 0 0;
+  }
+
+  .container-editorial {
+    @apply mx-auto w-full max-w-6xl px-6 md:px-10;
+  }
+
+  .hairline {
+    @apply h-px w-12 bg-gold;
+  }
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  .bg-grain {
+    background-image:
+      radial-gradient(
+        circle at 30% 20%,
+        rgba(201, 168, 76, 0.04) 0%,
+        transparent 55%
+      ),
+      radial-gradient(
+        circle at 70% 80%,
+        rgba(201, 168, 76, 0.03) 0%,
+        transparent 60%
+      );
   }
 }
