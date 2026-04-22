@@ -1,5 +1,11 @@
 import { setRequestLocale } from "next-intl/server";
-import { useTranslations } from "next-intl";
+import { HeroPlaceholder } from "@/components/home/HeroPlaceholder";
+import { AuthorIntro } from "@/components/home/AuthorIntro";
+import { FeaturedBooks } from "@/components/home/FeaturedBooks";
+import { TrilogyTeaser } from "@/components/home/TrilogyTeaser";
+import { AuthorQuote } from "@/components/home/AuthorQuote";
+import { NewsletterSection } from "@/components/home/NewsletterSection";
+import { getFeaturedBooks } from "@/data/books";
 
 interface HomePageProps {
   params: { locale: string };
@@ -7,18 +13,16 @@ interface HomePageProps {
 
 export default function HomePage({ params }: HomePageProps) {
   setRequestLocale(params.locale);
-  const t = useTranslations("hero");
+  const featured = getFeaturedBooks();
 
   return (
-    <section className="relative flex min-h-screen items-center justify-center">
-      <div className="container-editorial text-center">
-        <p className="text-xs uppercase tracking-[0.35em] text-gold/80">
-          {t("ornament")}
-        </p>
-        <h1 className="mt-6 font-serif text-5xl text-cream md:text-7xl">
-          {t("name")}
-        </h1>
-      </div>
-    </section>
+    <>
+      <HeroPlaceholder />
+      <AuthorIntro />
+      <FeaturedBooks books={featured} />
+      <TrilogyTeaser />
+      <AuthorQuote />
+      <NewsletterSection />
+    </>
   );
 }
