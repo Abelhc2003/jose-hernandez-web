@@ -1,23 +1,59 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
+
+gsap.registerPlugin(ScrollTrigger);
 
 interface TrilogyTransitionProps {
   text: string;
 }
 
 export function TrilogyTransition({ text }: TrilogyTransitionProps) {
+  const container = useRef<HTMLElement>(null);
+  const chars = Array.from(text);
+
+  useGSAP(
+    () => {
+      gsap.from(".tr-char", {
+        opacity: 0,
+        y: 6,
+        filter: "blur(4px)",
+        duration: 0.6,
+        ease: "power2.out",
+        stagger: 0.018,
+        scrollTrigger: {
+          trigger: container.current,
+          start: "top 75%",
+          end: "top 35%",
+          toggleActions: "play none none reverse",
+        },
+      });
+    },
+    { scope: container },
+  );
+
   return (
-    <section className="relative border-t border-gold/10 bg-dark py-32">
-      <motion.p
-        initial={{ opacity: 0, y: 16, filter: "blur(8px)" }}
-        whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-        viewport={{ once: true, margin: "-120px" }}
-        transition={{ duration: 1.4, ease: [0.22, 1, 0.36, 1] }}
+    <section
+      ref={container}
+      className="relative border-t border-gold/10 bg-dark py-32"
+    >
+      <p
+        aria-label={text}
         className="container-editorial max-w-3xl text-center font-serif text-2xl italic leading-relaxed text-cream/70 md:text-4xl"
       >
-        {text}
-      </motion.p>
+        {chars.map((c, i) => (
+          <span
+            key={i}
+            aria-hidden
+            className="tr-char inline-block whitespace-pre"
+          >
+            {c}
+          </span>
+        ))}
+      </p>
     </section>
   );
 }
