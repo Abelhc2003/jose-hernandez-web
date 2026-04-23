@@ -57,7 +57,7 @@
   "works": {
     "tag": "Catálogo",
     "title": "La obra completa",
-    "body": "Seis libros que recorren la trilogía histórica, la poesía íntima y la narrativa breve. Cada obra es una puerta a una forma distinta de mirar el mundo.",
+    "body": "Obras que recorren la trilogía histórica, la poesía íntima y la narrativa. Cada libro es una puerta a una forma distinta de mirar el mundo.",
     "sections": {
       "trilogia": {
         "title": "La no muerte de Jesús",
@@ -150,7 +150,7 @@
       "body": "Durante más de tres décadas ha combinado la dirección del Hospital Perpetuo Socorro de Cartagena con una presencia constante en los medios escritos de la Región de Murcia. Una trayectoria en la que la mirada del gestor y la del articulista se alimentan mutuamente."
     },
     "worksTag": "Sus obras",
-    "worksTitle": "Seis libros, tres géneros",
+    "worksTitle": "Tres géneros, una voz",
     "worksBody": "Trilogía histórico-religiosa, poesía y narrativa. Descubre todas las obras publicadas.",
     "worksCta": "Ver catálogo completo"
   },
