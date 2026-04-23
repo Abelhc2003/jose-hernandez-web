@@ -1,5 +1,5 @@
 import { setRequestLocale } from "next-intl/server";
-import { HeroPlaceholder } from "@/components/home/HeroPlaceholder";
+import { Hero } from "@/components/hero/Hero";
 import { AuthorIntro } from "@/components/home/AuthorIntro";
 import { FeaturedBooks } from "@/components/home/FeaturedBooks";
 import { TrilogyTeaser } from "@/components/home/TrilogyTeaser";
@@ -17,7 +17,7 @@ export default function HomePage({ params }: HomePageProps) {
 
   return (
     <>
-      <HeroPlaceholder />
+      <Hero />
       <AuthorIntro />
       <FeaturedBooks books={featured} />
       <TrilogyTeaser />
