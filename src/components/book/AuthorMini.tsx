@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { GoldButton } from "@/components/ui/GoldButton";
 import { SectionTag } from "@/components/ui/SectionTag";
@@ -23,11 +24,17 @@ export function AuthorMini({ tag, body, cta }: AuthorMiniProps) {
       >
         <div className="relative mx-auto aspect-[4/5] w-full max-w-xs border border-gold/20 bg-dark">
           <div className="absolute inset-3 border border-gold/10" />
-          <div className="flex h-full flex-col items-center justify-center gap-2 p-6 text-center">
-            <span className="font-serif text-5xl text-gold/30">JHM</span>
-            <span className="text-[10px] uppercase tracking-[0.4em] text-cream/40">
+          <Image
+            src="/images/author/jose-hernandez-mondejar.jpg"
+            alt="José Hernández Mondéjar, escritor"
+            fill
+            sizes="(max-width: 768px) 100vw, 320px"
+            className="object-cover"
+          />
+          <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-dark/90 to-transparent px-4 pb-4 pt-10">
+            <p className="text-center font-serif text-sm text-cream/90">
               José Hernández Mondéjar
-            </span>
+            </p>
           </div>
         </div>
 

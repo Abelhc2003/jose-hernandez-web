@@ -1,12 +1,14 @@
+import Image from "next/image";
 import type { Book } from "@/types";
 import { cn } from "@/lib/utils";
 
 interface BookCoverProps {
   book: Book;
   className?: string;
+  priority?: boolean;
 }
 
-export function BookCover({ book, className }: BookCoverProps) {
+export function BookCover({ book, className, priority = false }: BookCoverProps) {
   return (
     <div
       className={cn(
@@ -15,12 +17,13 @@ export function BookCover({ book, className }: BookCoverProps) {
       )}
     >
       {book.coverImage ? (
-        // TODO: sustituir por next/image cuando haya portadas finales en /public/images/covers
-        // eslint-disable-next-line @next/next/no-img-element
-        <img
+        <Image
           src={book.coverImage}
-          alt={book.title}
-          className="h-full w-full object-cover transition-opacity duration-700 hover:opacity-90"
+          alt={`Portada de ${book.title}`}
+          fill
+          priority={priority}
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 384px"
+          className="object-cover transition-opacity duration-700 hover:opacity-90"
         />
       ) : (
         <div className="flex h-full flex-col items-center justify-center gap-2 bg-gradient-to-b from-dark-2 to-dark-3 p-6 text-center">

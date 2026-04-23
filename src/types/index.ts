@@ -13,6 +13,7 @@ export interface Book {
   synopsis: string;
   quote: string;
   coverImage: string;
+  coverImageBack?: string;
   hook: string;
 }
 

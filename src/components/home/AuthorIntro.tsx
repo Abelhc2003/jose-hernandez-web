@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { GoldButton } from "@/components/ui/GoldButton";
@@ -19,14 +20,14 @@ export function AuthorIntro() {
           transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
           className="relative aspect-[4/5] w-full max-w-md border border-gold/20 bg-dark-2"
         >
-          {/* TODO: sustituir por foto real del autor en /public/images/author/ cuando esté disponible */}
           <div className="absolute inset-4 border border-gold/10" />
-          <div className="flex h-full flex-col items-center justify-center gap-4 p-10 text-center">
-            <span className="font-serif text-7xl text-gold/30">JHM</span>
-            <span className="text-[10px] uppercase tracking-[0.4em] text-cream/40">
-              Foto pendiente
-            </span>
-          </div>
+          <Image
+            src="/images/author/jose-hernandez-mondejar.jpg"
+            alt="José Hernández Mondéjar, escritor"
+            fill
+            sizes="(max-width: 768px) 100vw, 448px"
+            className="object-cover"
+          />
         </motion.div>
 
         <motion.div
