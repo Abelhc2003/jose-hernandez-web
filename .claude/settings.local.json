@@ -10,7 +10,12 @@
       "Bash(git config *)",
       "Bash(git add *)",
       "Bash(git commit *)",
-      "PowerShell(Remove-Item *)"
+      "PowerShell(Remove-Item *)",
+      "Bash(grep -E 'log$')",
+      "Bash(git rm *)",
+      "Bash(git reset *)",
+      "Bash(npx next *)",
+      "Bash(npm install *)"
     ]
   }
 }

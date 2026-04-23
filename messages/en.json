@@ -245,8 +245,19 @@
   },
   "footer": {
     "tagline": "Escritor. Articulista. Murcia.",
-    "privacy": "Política de privacidad",
-    "legal": "Aviso legal",
-    "rights": "© {year} José Hernández Mondéjar. Todos los derechos reservados."
+    "privacy": "Privacy Policy",
+    "legal": "Legal Notice",
+    "rights": "© {year} José Hernández Mondéjar. All rights reserved."
+  },
+  "legalPage": {
+    "privacyKicker": "Privacy",
+    "privacyTitle": "Privacy Policy",
+    "privacyBody": "This document is being drafted. The full privacy policy compliant with the General Data Protection Regulation (GDPR) will be available shortly.",
+    "privacyContact": "For any enquiries regarding your personal data, please use the contact form.",
+    "legalKicker": "Legal",
+    "legalTitle": "Legal Notice",
+    "legalBody": "This legal notice is being drafted. Full legal information about the owner of this website will be available shortly.",
+    "legalContact": "For any enquiries, please use the contact form.",
+    "backHome": "Back to home"
   }
 }

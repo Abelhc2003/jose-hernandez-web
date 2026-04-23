@@ -247,5 +247,16 @@
     "privacy": "Política de privacidad",
     "legal": "Aviso legal",
     "rights": "© {year} José Hernández Mondéjar. Todos los derechos reservados."
+  },
+  "legalPage": {
+    "privacyKicker": "Privacidad",
+    "privacyTitle": "Política de Privacidad",
+    "privacyBody": "Este documento está siendo redactado. En breve estará disponible la política de privacidad completa conforme al Reglamento General de Protección de Datos (RGPD) y la Ley Orgánica 3/2018 de Protección de Datos.",
+    "privacyContact": "Para cualquier consulta relativa a sus datos personales, puede contactar a través del formulario de contacto.",
+    "legalKicker": "Legal",
+    "legalTitle": "Aviso Legal",
+    "legalBody": "Este aviso legal está siendo redactado. En breve estará disponible la información legal completa sobre el titular de este sitio web conforme a la Ley 34/2002 de Servicios de la Sociedad de la Información.",
+    "legalContact": "Para cualquier consulta, puede contactar a través del formulario de contacto.",
+    "backHome": "Volver al inicio"
   }
 }

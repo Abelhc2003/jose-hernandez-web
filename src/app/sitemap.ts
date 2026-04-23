@@ -8,6 +8,8 @@ const STATIC_PATHS = [
   "/obras",
   "/obras/trilogia",
   "/contacto",
+  "/privacidad",
+  "/aviso-legal",
 ] as const;
 
 export default function sitemap(): MetadataRoute.Sitemap {

@@ -1,5 +1,6 @@
 "use client";
 
+import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { BookCard } from "@/components/ui/BookCard";
 import { GoldButton } from "@/components/ui/GoldButton";
@@ -24,7 +25,13 @@ export function FeaturedBooks({ books }: FeaturedBooksProps) {
   return (
     <section className="border-y border-gold/10 bg-dark-2 py-32">
       <div className="container-editorial flex flex-col gap-16">
-        <header className="flex flex-col items-start gap-6">
+        <motion.header
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+          className="flex flex-col items-start gap-6"
+        >
           <SectionTag>{t("tag")}</SectionTag>
           <h2 className="max-w-2xl font-serif text-3xl leading-tight text-cream md:text-5xl">
             {t("title")}
@@ -33,7 +40,7 @@ export function FeaturedBooks({ books }: FeaturedBooksProps) {
           <p className="max-w-2xl text-base leading-relaxed text-cream/70 md:text-lg">
             {t("body")}
           </p>
-        </header>
+        </motion.header>
 
         <div className="grid gap-8 md:grid-cols-3">
           {books.map((book, i) => (

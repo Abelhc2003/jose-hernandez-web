@@ -244,9 +244,20 @@
     }
   },
   "footer": {
-    "tagline": "Escritor. Articulista. Murcia.",
-    "privacy": "Política de privacidad",
-    "legal": "Aviso legal",
-    "rights": "© {year} José Hernández Mondéjar. Todos los derechos reservados."
+    "tagline": "Écrivain. Journaliste. Murcie.",
+    "privacy": "Politique de confidentialité",
+    "legal": "Mentions légales",
+    "rights": "© {year} José Hernández Mondéjar. Tous droits réservés."
+  },
+  "legalPage": {
+    "privacyKicker": "Confidentialité",
+    "privacyTitle": "Politique de confidentialité",
+    "privacyBody": "Ce document est en cours de rédaction. La politique de confidentialité complète conforme au Règlement général sur la protection des données (RGPD) sera disponible prochainement.",
+    "privacyContact": "Pour toute question concernant vos données personnelles, veuillez utiliser le formulaire de contact.",
+    "legalKicker": "Légal",
+    "legalTitle": "Mentions légales",
+    "legalBody": "Ces mentions légales sont en cours de rédaction. Les informations légales complètes sur le propriétaire de ce site seront disponibles prochainement.",
+    "legalContact": "Pour toute question, veuillez utiliser le formulaire de contact.",
+    "backHome": "Retour à l'accueil"
   }
 }
