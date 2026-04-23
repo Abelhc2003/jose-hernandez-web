@@ -132,6 +132,10 @@ export function getFeaturedBooks(): Book[] {
   );
 }
 
+export function getNewRelease(): Book | undefined {
+  return books.find((book) => book.isNew);
+}
+
 export function getRelatedBooks(slug: string, limit = 3): Book[] {
   const current = getBookBySlug(slug);
   if (!current) return [];
