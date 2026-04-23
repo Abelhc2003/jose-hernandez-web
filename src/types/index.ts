@@ -15,6 +15,8 @@ export interface Book {
   coverImage: string;
   coverImageBack?: string;
   hook: string;
+  isNew?: boolean;
+  shopUrl?: string;
 }
 
 export interface Review {

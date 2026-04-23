@@ -37,7 +37,12 @@ export function BookCard({ book, labels, className, delay = 0 }: BookCardProps) 
         className,
       )}
     >
-      <Link href={detailsHref} className="block">
+      <Link href={detailsHref} className="relative block">
+        {book.isNew && (
+          <span className="absolute left-0 top-3 z-10 bg-gold px-3 py-1 text-[9px] font-sans uppercase tracking-[0.35em] text-dark">
+            Novedad
+          </span>
+        )}
         <BookCover book={book} />
       </Link>
 
@@ -75,12 +80,12 @@ export function BookCard({ book, labels, className, delay = 0 }: BookCardProps) 
           {labels.learnMore}
         </Link>
         <a
-          href={book.amazonUrl}
+          href={book.shopUrl ?? book.amazonUrl}
           target="_blank"
           rel="noopener noreferrer"
           className="text-gold/80 hover:text-gold"
         >
-          {labels.buyOnAmazon} →
+          {book.shopUrl && !book.amazonUrl.includes("amazon") ? "Comprar →" : `${labels.buyOnAmazon} →`}
         </a>
       </div>
     </motion.article>

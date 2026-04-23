@@ -124,13 +124,20 @@ export function BookHero({
             ← {backToWorks}
           </Link>
 
-          {book.category === "trilogia" && book.trilogiaNum ? (
-            <TrilogyBadge num={book.trilogiaNum} label={trilogyShort} />
-          ) : (
-            <span className="text-[11px] uppercase tracking-[0.4em] text-gold/80">
-              {categoryLabel}
-            </span>
-          )}
+          <div className="flex flex-wrap items-center gap-3">
+            {book.category === "trilogia" && book.trilogiaNum ? (
+              <TrilogyBadge num={book.trilogiaNum} label={trilogyShort} />
+            ) : (
+              <span className="text-[11px] uppercase tracking-[0.4em] text-gold/80">
+                {categoryLabel}
+              </span>
+            )}
+            {book.isNew && (
+              <span className="bg-gold px-3 py-1 text-[9px] uppercase tracking-[0.35em] text-dark">
+                Novedad
+              </span>
+            )}
+          </div>
 
           <h1 className="font-serif text-4xl leading-[1.05] text-cream md:text-6xl">
             {book.title}
@@ -150,8 +157,8 @@ export function BookHero({
           )}
 
           <div className="flex flex-wrap items-center gap-6 pt-4">
-            <GoldButton href={book.amazonUrl} external>
-              {buyOnAmazon}
+            <GoldButton href={book.shopUrl ?? book.amazonUrl} external>
+              {book.shopUrl && !book.amazonUrl.includes("amazon") ? "Comprar libro" : buyOnAmazon}
             </GoldButton>
             {book.price && (
               <span className="text-xs uppercase tracking-[0.3em] text-cream/50">

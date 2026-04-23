@@ -91,6 +91,21 @@ export const books: readonly Book[] = [
     coverImage: "/images/covers/estacion-terminus.jpg",
     coverImageBack: "/images/covers/estacion-terminus-posterior.jpg",
   },
+  {
+    slug: "coco-el-sexto-mandamiento",
+    title: "Coco. El sexto mandamiento",
+    subtitle: "",
+    category: "narrativa",
+    amazonUrl: "https://libros.cc/COCO-EL-SEXTO-MANDAMIENTO.htm?isbn=9791370464073",
+    shopUrl: "https://libros.cc/COCO-EL-SEXTO-MANDAMIENTO.htm?isbn=9791370464073",
+    price: "22,00 €",
+    hook: "Hay libros que no se leen: te leen a ti.",
+    synopsis:
+      "En Coco, el sexto mandamiento, todo empieza con un hallazgo casual. Marta, una mujer de cincuenta años atrapada en la rutina de un matrimonio agotado, descubre en la habitación de un hotel de San Sebastián un viejo libro oculto bajo el colchón. Un título grabado en letras doradas: Coco. Y una advertencia inquietante: «El disfrute que no entiende de tiempos, personas ni lugares puede ser una maldición… a nosotras».\n\nA partir de ahí, la novela se despliega como un mosaico de historias encadenadas —Marta, Laura, Malú, Nuria, Desirée…—: mujeres distintas unidas por el mismo libro y por algo más profundo, el deseo que despierta en ellas. Novicias que descubren su cuerpo entre sermones sobre el pecado, esposas que nunca habían sentido placer hasta que algo las empuja a buscarlo, amantes que desafían la culpa religiosa, mujeres que se atreven a nombrar lo que durante años callaron. En cada relato, Coco no es solo un personaje: es una voz que irrumpe, que posee, que desata lo reprimido y obliga a enfrentarse a lo que siempre estuvo ahí.\n\nCon una ambientación sensorial —los colegios religiosos, las calles antiguas, la elegancia casi fantasmal de San Sebastián— y un erotismo directo, sin rodeos, la novela plantea una pregunta incómoda: ¿cuánto de nuestra moral es convicción y cuánto es miedo? Aquí la sexualidad femenina no aparece como vicio ni provocación, sino como una energía negada durante siglos, especialmente en mujeres educadas bajo la culpa.\n\nCoco es una historia sobre la herencia invisible de la represión y la libertad. Un libro que habla de placer, sí, pero también de identidad, de decisiones tardías y de la posibilidad —siempre inquietante— de empezar a mirar tu cuerpo de otra manera.\n\nSi te atreves a abrirlo, puede que no solo leas sus historias. Puede que empieces a reconocer la tuya.",
+    quote: "",
+    coverImage: "/images/covers/coco-el-sexto-mandamiento.jpg",
+    isNew: true,
+  },
 ] as const;
 
 export function getBookBySlug(slug: string): Book | undefined {
