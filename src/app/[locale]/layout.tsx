@@ -48,7 +48,6 @@ export async function generateMetadata({
       type: "website",
       locale,
       siteName: t("author"),
-      images: ["/og-image.jpg"],
     },
     twitter: {
       card: "summary_large_image",
