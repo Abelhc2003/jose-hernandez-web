@@ -32,11 +32,13 @@ export default async function WorksPage({ params }: WorksPageProps) {
   const trilogy = getTrilogy();
   const poetry = getBooksByCategory("poesia");
   const fiction = getBooksByCategory("narrativa");
+  const articulos = getBooksByCategory("articulos");
 
   const categoryLabels: Record<BookCategory, string> = {
     trilogia: tBooks("categories.trilogia"),
     poesia: tBooks("categories.poesia"),
     narrativa: tBooks("categories.narrativa"),
+    articulos: tBooks("categories.articulos"),
   };
 
   const sharedLabels = {
@@ -81,6 +83,17 @@ export default async function WorksPage({ params }: WorksPageProps) {
         body={t("sections.narrativa.body")}
         books={fiction}
         background="dark-2"
+        {...sharedLabels}
+      />
+
+      <WorksCategorySection
+        id="articulos"
+        tag={tBooks("categories.articulos")}
+        title={t("sections.articulos.title")}
+        subtitle={t("sections.articulos.subtitle")}
+        body={t("sections.articulos.body")}
+        books={articulos}
+        background="dark"
         {...sharedLabels}
       />
     </>

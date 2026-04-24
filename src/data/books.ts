@@ -92,6 +92,34 @@ export const books: readonly Book[] = [
     coverImageBack: "/images/covers/estacion-terminus-posterior.jpg",
   },
   {
+    slug: "mis-opiniones-inoportunas",
+    title: "Mis opiniones inoportunas",
+    subtitle: "",
+    category: "articulos",
+    amazonUrl:
+      "https://www.amazon.es/opiniones-inoportunas-Hospital-Nuestra-perpetuo/dp/8416157774/",
+    hook: "La voz del ciudadano de a pie, sin filtros.",
+    synopsis: "",
+    quote: "",
+    coverImage: "/images/covers/mis-opiniones-inoportunas.jpg",
+  },
+  {
+    slug: "mis-pensamientos-inoportunos-y-el-bisturi",
+    title: "Mis pensamientos inoportunos y el bisturí",
+    subtitle: "",
+    category: "articulos",
+    amazonUrl:
+      "https://www.amazon.es/pensamientos-inoportunos-bistur%C3%AD-Hern%C3%A1ndez-Mondejar/dp/8416799784/",
+    hook: "Más mordaz, más directo. La clase política bajo el bisturí.",
+    synopsis:
+      "En este segundo libro, José Hernández Mondéjar, desilusionado con los políticos que él creía merecían su felicitación, se vuelve más mordaz con toda la clase política. Especialmente crítico con los partidos políticos, por su falta de democracia interna, y con los políticos en general, por su menosprecio hacia los votantes una vez que les han sacado el voto, traslada el sentir de la calle a las letras de sus artículos. Su compromiso por los habitantes de la región de Murcia, en general —Mis pensamientos inoportunos— y de Cartagena, en particular —El Bisturí—, le llevan, semana tras semana, a recordarles a los inquilinos del pesebre de la política que son eso precisamente, inquilinos y con fecha de caducidad. Como suele decir el autor «yo escribo según la música que tocan los políticos, si es mala las letras no pueden ser buenas».",
+    quote:
+      "Yo escribo según la música que tocan los políticos, si es mala las letras no pueden ser buenas.",
+    coverImage: "/images/covers/mis-pensamientos-inoportunos-y-el-bisturi.jpg",
+    coverImageBack:
+      "/images/covers/mis-pensamientos-inoportunos-y-el-bisturi-posterior.jpg",
+  },
+  {
     slug: "coco-el-sexto-mandamiento",
     title: "Coco. El sexto mandamiento",
     subtitle: "",

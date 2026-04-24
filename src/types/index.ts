@@ -1,4 +1,4 @@
-export type BookCategory = "trilogia" | "poesia" | "narrativa";
+export type BookCategory = "trilogia" | "poesia" | "narrativa" | "articulos";
 
 export type TrilogiaNumber = 1 | 2 | 3;
 

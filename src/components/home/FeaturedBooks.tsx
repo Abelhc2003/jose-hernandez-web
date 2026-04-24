@@ -20,6 +20,7 @@ export function FeaturedBooks({ books }: FeaturedBooksProps) {
     trilogia: tBooks("categories.trilogia"),
     poesia: tBooks("categories.poesia"),
     narrativa: tBooks("categories.narrativa"),
+    articulos: tBooks("categories.articulos"),
   };
 
   return (

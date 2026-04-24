@@ -49,7 +49,8 @@
     "categories": {
       "trilogia": "Trilogía",
       "poesia": "Poesía",
-      "narrativa": "Narrativa"
+      "narrativa": "Narrativa",
+      "articulos": "Artículos de opinión"
     },
     "trilogyShort": "Trilogía · Libro"
   },
@@ -72,6 +73,11 @@
         "title": "Narrativa",
         "subtitle": "Relatos y viajes",
         "body": "Historias que transitan entre lo cotidiano y lo esencial."
+      },
+      "articulos": {
+        "title": "Artículos de opinión",
+        "subtitle": "La voz de la calle en letras de molde",
+        "body": "Dos décadas de articulismo en La Verdad y La Opinión de Murcia. Una mirada crítica, directa y sin concesiones a la clase política y al poder."
       }
     }
   },

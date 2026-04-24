@@ -37,6 +37,7 @@ export default async function AuthorPage({ params }: AuthorPageProps) {
     trilogia: tBooks("categories.trilogia"),
     poesia: tBooks("categories.poesia"),
     narrativa: tBooks("categories.narrativa"),
+    articulos: tBooks("categories.articulos"),
   };
 
   return (

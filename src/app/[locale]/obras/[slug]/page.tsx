@@ -66,6 +66,7 @@ export default async function BookPage({ params }: BookPageProps) {
     trilogia: tBooks("categories.trilogia"),
     poesia: tBooks("categories.poesia"),
     narrativa: tBooks("categories.narrativa"),
+    articulos: tBooks("categories.articulos"),
   };
 
   const related = getRelatedBooks(slug, 3);
